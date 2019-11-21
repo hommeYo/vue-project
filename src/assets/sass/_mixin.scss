@@ -1,0 +1,157 @@
+@import 'variables';
+
+// reset
+@mixin reset-box-model{
+  margin:0;
+  padding:0;
+  border:0;
+}
+@mixin reset-table{
+  width:100%;
+  table-layout:fixed;
+  border:0;
+  border-spacing:0;
+  border-collapse:collapse;
+}
+
+// :before :after box setting
+@mixin before{
+  &:before{
+    display:block;
+    clear:both;
+    content:'';
+    @content
+  }
+}
+@mixin after{
+  &:after{
+    display:block;
+    clear:both;
+    content:'';
+    @content
+  }
+}
+
+// vendorize
+@mixin vendorize($property, $value){
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+
+// text mixins
+@mixin blind{
+  visibility:hidden;
+  overflow:hidden;
+  position:absolute;
+  width:0;
+  height:0;
+  font-size:0;
+  line-height:0;
+}
+@mixin hover-line{
+  &:hover{text-decoration:underline;}
+}
+@mixin txt-hide-inlineblock($width, $height, $valign:middle){
+  display:inline-block;
+  overflow:hidden;
+  width:#{$width}px;
+  height:#{$height}px;
+  line-height:100em;
+  vertical-align:$valign;
+}
+@mixin ellipsis($width:100%){
+  overflow:hidden;
+  width:$width;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+// background
+@mixin sp{
+  background:url(/images/) no-repeat;
+  background-size:500px 500px;
+}
+
+// media query
+@mixin mq-tablet {
+  @media (max-width: $width-tablet) {
+    @content
+  }
+}
+@mixin mq-tablet2 {
+  @media (max-width: $width-tablet2) {
+    @content
+  }
+}
+@mixin mq-mobile {
+  @media (max-width: $width-mobile) {
+    @content
+  }
+}
+@mixin mq-mobile2 {
+  @media (max-width: $width-mobile2) {
+    @content
+  }
+}
+
+// position relative
+@mixin relative-t($top:0){
+  position:relative;
+  top:$top;
+}
+
+// position absolute
+@mixin absolute-all($top:0, $right:0, $bottom:0, $left:0){
+  position:absolute;
+  top:$top;
+  right:$right;
+  bottom:$bottom;
+  left:$left;
+}
+@mixin absolute-tl($top:0, $left:0){
+  position:absolute;
+  top:$top;
+  left:$left;
+}
+@mixin absolute-tr($top:0, $right:0){
+  position:absolute;
+  top:$top;
+  right:$right;
+}
+@mixin absolute-rb($right:0, $bottom:0){
+  position:absolute;
+  right:$right;
+  bottom:$bottom;
+}
+@mixin absolute-bl($bottom:0, $left:0){
+  position:absolute;
+  bottom:$bottom;
+  left:$left;
+}
+
+// keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin fix-fixed{
+  -webkit-transform: translateZ(0);
+}
+
+@mixin use-overflow-scrolling{
+  -webkit-overflow-scrolling:touch;
+}

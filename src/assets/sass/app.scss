@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+// mendentory
+@import "mixin";
+@import "variables";
+@import "normalized";
+@import "fonts";
+
+// layout
+@import "layout";
+
+// components
+@import "./components/carousel";

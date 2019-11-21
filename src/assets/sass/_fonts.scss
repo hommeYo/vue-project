@@ -1,0 +1,55 @@
+@import url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css);
+
+@font-face {
+  font-family: 'walsheimT';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/GT-Walsheim-Thin.eot'); /* IE9 Compat Modes */
+  src: local('GT Walsheim Thin'), local('GT-Walsheim-Thin'),
+       url('/fonts/GT-Walsheim-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/GT-Walsheim-Thin.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/GT-Walsheim-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'walsheimR';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/GT-Walsheim-Regular.eot'); /* IE9 Compat Modes */
+  src: local('GT Walsheim Regular'), local('GT-Walsheim-Regular'),
+       url('/fonts/GT-Walsheim-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/GT-Walsheim-Regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/GT-Walsheim-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'walsheimM';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/GT-Walsheim-Medium.eot'); /* IE9 Compat Modes */
+  src: local('GT Walsheim Medium'), local('GT-Walsheim-Medium'),
+       url('/fonts/GT-Walsheim-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/GT-Walsheim-Medium.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/GT-Walsheim-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'walsheimB';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/GT-Walsheim-Bold.eot'); /* IE9 Compat Modes */
+  src: local('GT Walsheim Bold'), local('GT-Walsheim-Bold'),
+       url('/fonts/GT-Walsheim-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/GT-Walsheim-Bold.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/GT-Walsheim-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+.font-wT {
+	font-family: $font-wT;
+}
+.font-wR {
+	font-family: $font-wR;
+}
+.font-wM {
+	font-family: $font-wM;
+}
+.font-wB {
+	font-family: $font-wB;
+}
