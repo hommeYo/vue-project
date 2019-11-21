@@ -1,4 +1,5 @@
 # vue-project
+<<<<<<< HEAD
 
 ## Project setup
 ```
@@ -32,3 +33,6 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+vue project
+>>>>>>> bc0ef700e4c336cc82004f5e4a1b15a737b3a8ea
